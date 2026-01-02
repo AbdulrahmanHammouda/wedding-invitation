@@ -50,10 +50,17 @@
             font-size: 1.1em;
         }
         
+        .language-options {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
         .invitation-button {
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 25px 60px;
+            padding: 25px 50px;
             border-radius: 50px;
             text-decoration: none;
             color: white;
@@ -61,6 +68,7 @@
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            min-width: 200px;
         }
         
         .invitation-button:hover {
@@ -83,12 +91,18 @@
             }
             
             .invitation-button {
-                padding: 20px 50px;
+                padding: 20px 40px;
                 font-size: 1.1em;
+                min-width: 150px;
             }
             
             .container {
                 padding: 50px 30px;
+            }
+            
+            .language-options {
+                flex-direction: column;
+                gap: 15px;
             }
         }
     </style>
@@ -97,11 +111,16 @@
     <div class="container">
         <h1>💍 Wedding Invitation 💍</h1>
         <p class="couple">Abdulrahman Hussam & Hager Ashraf</p>
-        <p class="message">We joyfully invite you to celebrate our special day</p>
+        <p class="message">Please select your preferred language</p>
         
-        <a href="invitation-romantic-garden.html" class="invitation-button">
-            View Invitation
-        </a>
+        <div class="language-options">
+            <a href="invitation-romantic-garden.html" class="invitation-button">
+                English
+            </a>
+            <a href="invitation-romantic-garden-arabic.html" class="invitation-button">
+                العربية
+            </a>
+        </div>
     </div>
 </body>
 </html>
