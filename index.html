@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - Abdulrahman & Hager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cinzel', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .couple {
+            font-size: 1.3em;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .message {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .invitation-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 25px 60px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.3em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .invitation-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+            background: linear-gradient(135deg, #5568d3 0%, #65388b 100%);
+        }
+        
+        .invitation-button:active {
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .couple {
+                font-size: 1.1em;
+            }
+            
+            .invitation-button {
+                padding: 20px 50px;
+                font-size: 1.1em;
+            }
+            
+            .container {
+                padding: 50px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💍 Wedding Invitation 💍</h1>
+        <p class="couple">Abdulrahman Hussam & Hager Ashraf</p>
+        <p class="message">We joyfully invite you to celebrate our special day</p>
+        
+        <a href="invitation-romantic-garden.html" class="invitation-button">
+            View Invitation
+        </a>
+    </div>
+</body>
+</html>
